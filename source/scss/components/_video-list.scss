@@ -1,0 +1,40 @@
+.video-list{
+    display: grid;
+    grid-gap: 21px;
+
+    @include for-small-tablet{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include small-tablet{
+        @include for-mobile{
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+
+        .video-list{
+            &__item{
+                &:last-child{
+                    grid-column: 1/3;
+                    width: 100%;
+
+                    .info-card{
+                        width: 100%;
+                        &__image{
+                            img,picture{
+                                width: 100%;
+                                max-height: Min(46.6vw, 357px);
+                                height: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    }
+
+    @include mobile{
+        grid-template-columns: 100%;
+        justify-items: center;
+    }
+}

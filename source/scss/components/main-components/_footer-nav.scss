@@ -1,0 +1,23 @@
+.footer-nav{
+
+    ul{
+        display: flex;
+        align-items: center;
+        grid-gap: 10px clamp(20px, 2.3932vw, 28px);
+
+        @include mobile{
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+
+    a{
+        font-size: clamp(14px, 1.3675vw, 16px);
+        font-weight: 400;
+        transition: all .3s;
+
+        &:hover{
+            transform: scale(1.05);
+        }
+    }
+}

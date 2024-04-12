@@ -1,0 +1,38 @@
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  position: relative;
+  padding: 5px 7px;
+  width: fit-content;
+  border-radius: 99px;
+  background: rgba(var(--bg-e), 1);
+
+  &__link {
+    color: rgba(var(--cl-d), 1);
+    font-size: 14px;
+    border-radius: 999px;
+    transition: all 0.4s;
+
+    @include for-laptop{
+      padding: clamp(10px, 1.3675vw, 16px) clamp(20px, 2.5641vw, 30px) clamp(11px, 1.453vw, 17px) clamp(21px, 2.6496vw, 31px);
+    }
+
+    @include laptop{
+      @include for-tablet{
+        padding: 16px 20px 17px 21px;
+      }
+    }
+
+    &.active {
+      background: rgba(var(--bg-d), 1);
+      color: rgba(var(--cl-e), 1);
+      font-weight: 600;
+    }
+
+    &:hover {
+      background: rgba(var(--bg-d), 1);
+      color: rgba(var(--cl-e), 1);
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.calc-section{
+    padding-bottom: clamp(60px, 12.3932vw, 145px);
+
+
+    &__box{
+        display: flex;
+        flex-direction: column;
+        grid-gap: clamp(24px, 2.8205vw, 33px);
+    }
+
+    &__title{
+        @include small-tablet{
+            align-self: center;
+            text-align: center;
+        }
+    }
+}

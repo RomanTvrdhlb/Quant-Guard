@@ -1,0 +1,40 @@
+.plan-list {
+  display: grid;
+
+  @include for-small-tablet {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @include small-tablet {
+    @include for-mobile {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @include for-mobile{
+    grid-gap: clamp(15px, 1.6239vw, 19px);
+  }
+
+  @include mobile{
+    grid-gap: 20px;
+  }
+
+  &__item {
+    @include small-tablet {
+      @include for-mobile {
+        &:last-child {
+          grid-column: 1/3;
+
+          .plan-card__list {
+            @include small-tablet {
+              @include for-mobile {
+                grid-gap: 20px;
+                flex-direction: row;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

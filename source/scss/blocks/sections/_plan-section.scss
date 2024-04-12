@@ -1,0 +1,15 @@
+.plan-section{
+    padding-bottom: clamp(80px, 11.5385vw, 135px);
+
+    &__box{
+        display: flex;
+        flex-direction: column;
+        grid-gap: clamp(40px, 5.812vw, 68px);
+    }
+
+    &__title{
+        @include small-tablet{
+            align-self: center;
+        }
+    }
+}

@@ -1,0 +1,104 @@
+.header {
+  padding: 22px 0;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 90;
+  background-color: rgba(var(--bg-b),1.0);
+
+
+  &__inner {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+   
+    @include for-laptop{
+      grid-gap: clamp(20px, 4.7009vw, 55px);
+    }
+
+    @include laptop{
+      @include for-tablet{
+        grid-gap: 20px;
+
+        .main-nav{
+          justify-self: center;
+        }
+      }
+    }
+
+    @include tablet {
+      grid-gap: clamp(15px, 1.953vw, 20px);
+      .main-nav {
+        display: none;
+      }
+    }
+
+    @include ios{
+      .logo{
+        width: 139px;
+      }
+    }
+  }
+
+  &__btns{
+    display: flex;
+    align-items: center;
+
+    .main-btn{
+      padding: 10px;
+
+      @include for-small-tablet{
+        min-width: 164px;
+        height: 50px;
+      }
+      @include small-tablet{
+        min-width: clamp(125px, 21.354vw, 164px);
+        height: clamp(45px, 6.51vw, 50px);
+        font-size: clamp(12px, 1.823vw, 14px);
+      }
+    }
+
+    @include tablet{
+      justify-content: flex-end;
+    }
+
+    @include for-small-tablet{
+      grid-gap: clamp(20px, 2.3077vw, 27px);
+    }
+
+    @include small-tablet{
+      grid-gap: clamp(15px, 2.604vw, 20px);
+    }
+  }
+
+  &__btn{
+    color:  rgba(var(--cl-a),1.0);
+    font-weight: 700;
+    transition: all .3s;
+
+    &:hover{
+      color: rgba(var(--cl-f),1.0);
+    }
+    @include for-small-tablet{
+      font-size: 14px;
+    }
+    @include small-tablet{
+      font-size: clamp(12px, 1.823vw, 14px);
+    }
+
+    @media (max-width: (390px)) {
+      display: none;
+    }
+  }
+}
+
+
+.burger {
+  display: none;
+
+  @include tablet {
+    display: flex;
+    @include burger;
+  }
+}

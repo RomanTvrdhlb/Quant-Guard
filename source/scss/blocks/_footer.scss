@@ -1,0 +1,15 @@
+.footer {
+  padding: clamp(30px, 4.2735vw, 50px) 0 clamp(33px, 4.5299vw, 53px);
+
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-gap: 15px 20px;
+
+    @include small-tablet{
+      flex-direction: column;
+    }
+  }
+}
+

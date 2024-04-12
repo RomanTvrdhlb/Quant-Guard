@@ -1,0 +1,15 @@
+.faq-section{
+    padding-bottom: clamp(80px, 17.265vw, 202px);
+
+    &__box{
+        display: flex;
+        flex-direction: column;
+        grid-gap: clamp(40px, 6.3248vw, 74px);
+    }
+
+    &__title{
+        @include small-tablet{
+            align-self: center;
+        }
+    }
+}

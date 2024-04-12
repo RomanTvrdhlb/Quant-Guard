@@ -1,0 +1,57 @@
+.info-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    grid-gap: clamp(15px, 2.735vw, 32px);
+
+
+    &__icon{
+        width: clamp(40px, 3.8462vw, 45px);
+        height: clamp(40px, 3.8462vw, 45px);
+        flex-shrink: 0;
+        border-radius: 50%;
+        z-index: 3;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &::before{
+            position: absolute;
+            content: '';
+            background-image: var(--info-bg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            inset: 0;
+            z-index: -1;
+        }
+
+        svg{
+            fill: none;
+            stroke:  rgba(var(--cl-a),1.0);
+        }
+    }
+
+    &__card{
+        display: flex;
+        align-items: center;
+        grid-gap: 10px;
+
+        color: rgba(var(--cl-a),1.0);
+        font-size: clamp(14px, 1.3675vw, 16px);
+        font-style: normal;
+        font-weight: 600;
+        line-height: 131.25%;
+
+        @include  small-tablet{
+            height: 100%;
+            width: 100%;
+            border-radius: 12px;
+            border: 1px dashed var(--br-b);
+            background: var(--gr-a);
+            backdrop-filter: blur(10.5px);
+            padding: 21px 23px;
+        }
+    }
+}

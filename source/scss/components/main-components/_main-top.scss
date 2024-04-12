@@ -1,0 +1,43 @@
+.main-top{
+    display: flex;
+    flex-direction: column;
+    grid-gap: 20px;
+
+    @include small-tablet{
+        align-items: center;
+    }
+
+    &__title{
+        color:  rgba(var(--cl-a),1.0);
+
+        @include small-tablet{
+            text-align: center;
+        }
+    }
+
+    .main-btn{
+        @include small-tablet{
+            max-width: 410px;
+            width: 100%;
+        }
+    }
+
+    p{
+        color:  rgba(var(--cl-a),1.0);
+
+        @include small-tablet{
+            text-align: center;
+        }
+    }
+
+    &--mode{
+        align-items: center;
+
+        .main-top__title{
+            text-align: center;
+        }
+        p{
+            text-align: center;
+        }
+    }
+}

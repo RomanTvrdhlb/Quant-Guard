@@ -1,0 +1,114 @@
+.terms-tabs{
+    border-radius: 21px;
+    border: solid 1px var(--br-c);
+    display: flex;
+    flex-direction: column;
+    grid-gap: clamp(30px, 2.8205vw, 33px);
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+
+    &::before{
+        pointer-events: none;
+     
+        z-index: -1;
+        position: absolute;
+        content: '';
+        border-radius: 21px;
+        inset: 0;
+        background: linear-gradient(180deg, rgba(18, 25, 60, 0.12) 0%, rgba(18, 24, 52, 0.63) 100%);
+        backdrop-filter: blur(9.600000381469727px);
+    }
+
+    @include for-small-tablet{
+        padding: 29px 31px clamp(38px, 4.1026vw, 48px) 31px;
+    }
+
+    @include small-tablet{
+        padding: 29px 0 clamp(38px, 4.1026vw, 48px) 0;
+    }
+
+    &__nav{
+        display: flex;
+        align-items: center;
+        grid-gap: 5px clamp(15px, 2.5641vw, 30px);
+
+        @include for-small-tablet{
+            flex-wrap: wrap;
+        }
+
+        @include small-tablet{
+            overflow: auto;
+            padding: 0 clamp(15px, 2.6496vw, 31px) 0 clamp(15px, 2.6496vw, 31px);
+        }
+
+
+        &-btn{
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 193.75%;
+            min-height: 55px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all .4s;
+            white-space: nowrap;
+
+            &.active{
+                color: rgba(var(--cl-a),1);
+                padding: 0 clamp(25px, 3.9316vw, 46px);
+                border-radius: 12px;
+                background: rgba(var(--bg-k),1.0);
+
+                &:hover{
+                    background: rgba(var(--bg-k),.8);
+                    @include small-tablet{
+                        color: rgba(var(--cl-a),1);
+                    }
+                }
+            }
+
+            &:hover{
+                color: rgba(var(--cl-a),.7);
+            }
+        }
+    }
+
+    &__title{
+        font-size: clamp(18px, 1.7949vw, 21px);
+        font-weight: 700;
+        line-height: 100%;
+    }
+
+    &__box{
+        display: flex;
+        flex-direction: column;
+        grid-gap: 19px;
+
+        ul{
+            display: flex;
+            flex-direction: column;
+            list-style: disc;
+            padding-left: 25px;
+            li{
+               
+                position: relative;
+                list-style: disc;
+
+                &::marker{
+                    color: rgba(var(--cl-a),1.0);
+                }
+            }
+
+            p{
+                font-size: clamp(14px, 1.3675vw, 16px);
+                line-height: 193.75%;
+            }
+        }
+
+        @include small-tablet{
+            padding: 0 clamp(15px, 2.6496vw, 31px) 0 clamp(15px, 2.6496vw, 31px);
+        }
+    }
+
+}

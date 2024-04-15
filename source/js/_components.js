@@ -7,7 +7,7 @@ import './components/range';
 // import './components/modals';
 // import './components/global';
 // import './components/replaceEl';
-// import './components/tabs';
+import './components/tabs';
 // import './components/stars-rating';
 import './components/burger';
 // import './components/quiz';

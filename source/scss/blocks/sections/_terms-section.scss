@@ -1,0 +1,17 @@
+.terms-section{
+    padding: clamp(25px, 3.8462vw, 45px) 0 clamp(27px, 3.5897vw, 42px);
+
+    &__box{
+        display: flex;
+        flex-direction: column;
+        grid-gap: clamp(40px, 6.3248vw, 74px);
+    }
+
+    .main-top{
+        grid-gap: 18px;
+
+        p{
+            line-height: 193.75%;
+        }
+    }
+}

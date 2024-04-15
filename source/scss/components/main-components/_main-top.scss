@@ -15,6 +15,13 @@
         }
     }
 
+    &__subtitle{
+        color: rgba(var(--cl-f),1.0);
+        font-size: clamp(18px, 1.7949vw, 21px);
+        font-weight: 700;
+        line-height: 100%;
+    }
+
     .main-btn{
         @include small-tablet{
             max-width: 410px;

@@ -76,4 +76,38 @@
             }
         }
     }
+
+
+    &__wrapp{
+        display: grid;
+        grid-gap: 40px clamp(25px, 3.5043vw, 41px);
+        align-items: center;
+
+        @include for-small-tablet{
+            grid-template-columns: 1fr minmax(clamp(350px, 36.7521vw, 430px), .62fr);
+        }
+
+        @include small-tablet{
+            grid-template-columns: 100%;
+        }
+    }
+
+    &--mode{
+        padding:0 0 57px;
+
+        .main-top{
+            grid-gap: clamp(25px, 4.0171vw, 47px);
+            p{
+                line-height: 193.75%;
+            }
+
+            &__title{
+                line-height: 114.286%;
+            }
+
+            @include small-tablet{
+                max-width: 100%;
+            }
+        }
+    }
 }

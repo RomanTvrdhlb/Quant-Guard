@@ -1,0 +1,15 @@
+.team-section{
+    padding-bottom:clamp(60px, 7.1795vw, 84px);
+
+    &__box{
+        display: flex;
+        flex-direction: column;
+        grid-gap: clamp(30px, 3.0769vw, 36px);
+    }
+
+    &__title{
+        @include small-tablet{
+            align-self: center;
+        }
+    }
+}

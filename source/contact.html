@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="Ru">
+@include('partials/head.html')
+
+<body>
+  @include('partials/header.html')
+  <!--@include('partials/header-user.html')-->
+
+  <main>
+
+    <section class="contact-section">
+      <div class="container">
+        <div class="contact-section__box">
+          <div class="main-top">
+            <h1 class="main-top__title subtitle">Contact</h1>
+            <p>We are always in touch with you</p>
+          </div>
+    
+          <div class="contact-section__inner">
+            <div class="contact-section__wrapp">
+              <div class="main-top">
+                <h1 class="main-top__title">Have questions?</h1>
+                <p>Contact us</p>
+              </div>
+              
+              <p>If you have any questions,<br>
+                please contact us by mail.<br>
+                We will be happy to help you.<br>
+                Our E-Mail: <a class="link">support@hyipdev.com</a></p>
+            </div>
+
+            <div class="main-form">
+
+              <div class="main-form__field">
+                <span class="main-form__subtitle">Name</span>
+                <label for="name" class="main-form__label">
+                  <input type="text" id="name" class="main-form__input" placeholder="Enter your name">
+                  <span class="main-form__icon">
+                    <svg width='24' height='24'>
+                      <use href='img/sprite/sprite.svg#user'></use>
+                    </svg>
+                  </span>
+                </label>
+              </div>
+              <div class="main-form__field">
+                <span class="main-form__subtitle">Email:</span>
+                <label for="mail" class="main-form__label">
+                  <input type="text" id="mail" class="main-form__input" placeholder="Enter your email">
+                  <span class="main-form__icon">
+                    <svg width='24' height='24'>
+                      <use href='img/sprite/sprite.svg#mail'></use>
+                    </svg>
+                  </span>
+                </label>
+              </div>
+              <div class="main-form__field main-form__field--area">
+                <span class="main-form__subtitle">Message:</span>
+                <label for="mess" class="main-form__label">
+                  <textarea  id="mess" class="main-form__area main-form__input" placeholder="Enter your message"></textarea>
+                </label>
+              </div>
+              
+              <button class="main-btn">
+                Send message
+                <span></span>
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="earn-section">
+      <div class="container">
+        <div class="earn-section__box">
+          <div class="earn-section__wrapp">
+          <div class="main-top">
+            <span class="main-top__title subtitle">Earn while you sleep</span>
+            <p>Achieving financial freedom and independence is a common goal for many people. Crypto arbitrage trading systems can be a stepping stone toward achieving this goal by generating consistent income and building wealth over time.</p>
+          </div>
+
+          <ul class="info-list">
+            <li class="info-list__item">
+              <div class="info-list__card">
+                <span class="info-list__icon">
+                  <svg width='24' height='24'>
+                    <use href='img/sprite/sprite.svg#verify'></use>
+                  </svg>
+                </span>
+                Market Analysis
+              </div>
+            </li>
+            <li class="info-list__item">
+              <div class="info-list__card">
+                <span class="info-list__icon">
+                  <svg width='24' height='24'>
+                    <use href='img/sprite/sprite.svg#globe'></use>
+                  </svg>
+                </span>
+                Risk mitigation
+              </div>
+            </li>
+            <li class="info-list__item">
+              <div class="info-list__card">
+                <span class="info-list__icon">
+                  <svg width='24' height='24'>
+                    <use href='img/sprite/sprite.svg#shield'></use>
+                  </svg>
+                </span>
+                Profit Generation
+              </div>
+            </li>
+          </ul>
+        </div>
+          <div class="earn-section__image">
+            <picture>
+              <source type='image/webp' srcset='img/index/img3.webp'>
+              <img width='617' height='500' src='img/index/img3.png' alt='image'>
+            </picture>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--    @include('partials/components/sections/how-section.html')-->
+  </main>
+
+  @include('partials/footer.html')
+  @include('partials/modals.html')
+</body>
+<script src="js/main.js"></script>
+
+</html>

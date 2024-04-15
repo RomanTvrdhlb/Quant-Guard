@@ -1,0 +1,5 @@
+.bonus-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(clamp(220px, 22.2222vw, 260px), 1fr));
+    grid-gap: clamp(15px, 1.7094vw, 20px);
+}

@@ -12,4 +12,8 @@
             align-self: center;
         }
     }
+
+    &--mode{
+        padding:clamp(25px, 4.7009vw, 55px) 0 clamp(90px, 19.9145vw, 233px);
+    }
 }

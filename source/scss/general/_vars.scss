@@ -10,7 +10,7 @@
   --body-font-size: 16px;
   --content-width: 1170px;
 
-  --container-offset: clamp(16px, 1.8018vw, 40rem);
+  --container-offset: clamp(16px, 2.0513vw, 24px);
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
 
   // --------------- default JS variables ---------------
@@ -47,6 +47,12 @@
   --cl-f: #{HexToRGB(#2364F9)}; // rgba(var(--cl-f),1.0);
   --cl-g: #{HexToRGB(#8A92BC)}; // rgba(var(--cl-g),1.0);
   --cl-h: #{HexToRGB(#676D8E)}; // rgba(var(--cl-h),1.0);
+  --cl-i: #{HexToRGB(#5e5e60)}; // rgba(var(--cl-i),1.0);
+  --cl-j: #{HexToRGB(#928585)}; // rgba(var(--cl-j),1.0);
+  --cl-k: #{HexToRGB(#a4a4ac)}; // rgba(var(--cl-k),1.0);
+  --cl-l: #{HexToRGB(#af9775)}; // rgba(var(--cl-l),1.0);
+  --cl-m: #{HexToRGB(#828282)}; // rgba(var(--cl-m),1.0);
+  --cl-n: #{HexToRGB(#acada7)}; // rgba(var(--cl-n),1.0);
 
   // --------------- default background color variables ---------------
   --bg-a: #{HexToRGB(#ffffff)}; // rgba(var(--bg-a),1.0);
@@ -58,10 +64,9 @@
   --bg-g: #{HexToRGB(#1A234E)}; // rgba(var(--bg-g),1.0);
   --bg-h: #{HexToRGB(#2A3878)}; // rgba(var(--bg-h),1.0);
   --bg-i: #{HexToRGB(#2C3459)}; // rgba(var(--bg-i),1.0);
-
-
-  --bg-j: #{HexToRGB(#29282e)}; // rgba(var(--bg-j),1.0);
-  --bg-k: #{HexToRGB(#D9D9D9)}; // rgba(var(--bg-k),1.0);
+  --bg-j: #{HexToRGB(#121212)}; // rgba(var(--bg-j),1.0);
+  --bg-k: #{HexToRGB(#0C1022)}; // rgba(var(--bg-k),1.0);
+  --bg-l: #{HexToRGB(#D9D9D9)}; // rgba(var(--bg-l),1.0);
 
   // --------------- default border color variable ---------------
   --br-a: #ffffff; // var(--br-a);
@@ -69,12 +74,13 @@
   --br-c: #2C3458; // var(--br-c);
 
 
-  --br-d: #a494ee; // var(--br-d);
+  --br-d: #2C3458; // var(--br-d);
   --br-e: #9A8BDA; // var(--br-e);
 
  // --------------- default gradient color variable ---------------
  --gr-a: linear-gradient(180deg, rgba(18, 24, 52, 0.00) 0%, #121834 100%); // var(--gr-a);
  --gr-b: linear-gradient(180deg, rgba(26, 35, 78, 0.00) 0%, #1A234E 96%); // var(--gr-b);
+ --gr-c: linear-gradient(180deg, #171719 0%, rgba(23, 23, 25, 0.00) 100%); // var(--gr-c);
 
 
 }

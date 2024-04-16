@@ -61,6 +61,7 @@ function buttonClickHandler(e, buttonAttribute, activeClass) {
 
   removeClassInArray(modals, activeClass);
   addCustomClass(overlay, activeClass);
+  addCustomClass(overlay, activeMode);
   addCustomClass(currentModal, activeClass);
   fadeIn(currentModal, 200, 'flex');
 
@@ -98,8 +99,9 @@ innerButtonModal && innerButtonModal.forEach(function(btn) {
     const currentModal = overlay.querySelector(`[data-popup="${currentModalId}"]`);
     removeClassInArray(modals, activeClass);
     addCustomClass(overlay, activeClass);
+    addCustomClass(overlay, activeMode);
     fadeOut(document.querySelector(`[data-popup="${prevId}"]`), 0);
-    fadeIn(currentModal, 200);
+    fadeIn(currentModal, 200, 'flex');
     addCustomClass(currentModal, activeClass);
     disableScroll();
     innerButton = overlay.querySelector(`${"[data-popup]"}.${activeClass} .close`);

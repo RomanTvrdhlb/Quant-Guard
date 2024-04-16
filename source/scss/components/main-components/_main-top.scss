@@ -22,6 +22,16 @@
         line-height: 100%;
     }
 
+    &__btns{
+        display: flex;
+        align-items: center;
+        grid-gap: 12px;
+
+        .main-btn{
+            min-width: clamp(180px, 18.8034vw, 220px);
+        }
+    }
+
     .main-btn{
         @include small-tablet{
             max-width: 410px;

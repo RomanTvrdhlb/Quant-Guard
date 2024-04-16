@@ -26,6 +26,27 @@
             grid-column: 1/-1;
         }
     }
+
+    &--captcha{
+      .main-form__input{
+        padding: 16px 150px 17px 20px;
+      }
+    }
+  }
+
+  &__captcha{
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    bottom: 4px;
+    display: flex;
+    align-items: center;
+
+
+    img,picture{
+      width: auto;
+      height: 100%;
+    }
   }
 
   &__subtitle {

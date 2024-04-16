@@ -4,7 +4,7 @@ import './components/dinamicHeight';
 import './components/animateBtn';
 import './components/accordion';
 import './components/range';
-// import './components/modals';
+import './components/modals';
 // import './components/global';
 // import './components/replaceEl';
 import './components/tabs';

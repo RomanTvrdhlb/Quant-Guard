@@ -77,7 +77,6 @@
         }
     }
 
-
     &__wrapp{
         display: grid;
         grid-gap: 40px clamp(25px, 3.5043vw, 41px);
@@ -90,6 +89,12 @@
         @include small-tablet{
             grid-template-columns: 100%;
         }
+    }
+
+    &__inner{
+        display: grid;
+        grid-template-columns: 1fr clamp(500px, 46.9231vw, 549px);
+        grid-gap: clamp(35px, 6.4957vw, 76px);
     }
 
     &--mode{
@@ -107,6 +112,184 @@
 
             @include small-tablet{
                 max-width: 100%;
+            }
+        }
+    }
+
+    &--traders{
+        @include for-tablet{
+            padding: 0 0 clamp(80px, 16.0684vw, 188px);
+        }
+
+        @include tablet{
+            @include for-mobile{
+                padding: 0 0 clamp(40px, 5.859vw, 60px);
+            }
+        }
+
+        @include mobile{
+            padding: 0 0 10px;
+        }
+
+        .main-top{
+            grid-gap: clamp(24px, 2.5641vw, 30px);
+            p{
+                line-height: 193.75%;
+            }
+
+            &__title{
+                line-height: 114.286%;
+            }
+
+            @include tablet{
+                max-width: 100%;
+            }
+        }
+
+        .about-section{
+
+            &__inner{
+                @include laptop{
+                    @include for-tablet{
+                        grid-gap: 20px;
+                        grid-template-columns: 1fr auto;
+                    }
+                }
+
+                @include tablet{
+                    grid-template-columns: 100%;
+                }
+            }
+
+            &__image{
+                display: flex;
+                position: relative;
+
+                img,picture{
+                    width: 100%;
+                    height: auto;
+                }
+
+                @include laptop{
+                  margin: 0;
+
+                  img,picture{
+                    left: 0;
+                    right: initial;
+                  }
+                }
+
+                @include for-tablet{
+                    justify-self: end;
+                    bottom: -44px;
+                    width: Min(48.4615vw, 567px);
+                    height: fit-content;
+                }
+
+                @include tablet{
+                    @include for-mobile{
+                        width: 70%;
+                    }
+                    order: 2;
+                    justify-self: center;
+                }
+
+                @include mobile{
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    &--community{
+        padding: 0 0 80px;
+
+        @include mobile{
+            margin-top: -30px;
+        }
+
+        .main-top{
+            grid-gap: clamp(24px, 2.5641vw, 30px);
+            p{
+                line-height: 193.75%;
+            }
+
+            &__title{
+                line-height: 114.286%;
+            }
+
+            @include small-tablet{
+                max-width: 100%;
+            }
+
+            &__btns{
+                @include mobile{
+                    width: 100%;
+
+                    .main-btn{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        .about-section{
+            &__inner{
+                @include for-tablet{
+                    grid-template-columns: 1fr Min(45.2991vw, 530px);
+                }
+
+                @include tablet{
+                    @include for-small-tablet{
+                        grid-template-columns: 1fr auto;
+                    }
+                }
+                @include small-tablet{
+                    grid-template-columns: 100%;
+                }
+            }
+            &__image{
+                
+                justify-self: center;
+                position: relative;
+                bottom: 30px;
+                
+
+                @include for-laptop{
+                    display: flex;
+                    left: 25px;
+                    width: Min(45.2991vw, 530px);
+                }
+
+                @include laptop{
+                    img,picture{
+                        height: auto;
+                    }
+                  
+                }
+
+                @include tablet{
+                    margin: 0;
+                    width: 100%;
+                    img,picture{
+                        height: auto;
+                        right: initial;
+                    }
+                }
+
+                @include small-tablet{
+                    display: flex;
+                    justify-content: center;
+                    bottom: 0;
+
+                    @include for-mobile{
+                        width: 70%;
+                    }
+                }
+
+                @include mobile{
+                    width: 100%;
+                }
             }
         }
     }

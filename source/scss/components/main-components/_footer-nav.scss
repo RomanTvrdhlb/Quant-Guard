@@ -1,9 +1,43 @@
 .footer-nav{
+    display: flex;
+    grid-gap: clamp(30px, 7.265vw, 85px);
+
+    @include for-mobile{
+        padding-top: Min(4.7009vw, 55px);
+    }
+
+    @include mobile{
+        padding-top: 15px;
+    }
+
+    @include small-tablet{
+        justify-content: space-between;
+    }
+
+    &__title{
+        font-family: var(--font-family);
+        font-weight: 600;
+        font-size: clamp(16px, 1.5385vw, 18px);
+    }
+
+    &__col{
+        display: flex;
+        flex-direction: column;
+        grid-gap: clamp(15px, 2.5641vw, 30px);
+    }
 
     ul{
         display: flex;
-        align-items: center;
-        grid-gap: 10px clamp(20px, 2.3932vw, 28px);
+        flex-direction: column;
+        grid-gap: 12px clamp(20px, 2.3932vw, 28px);
+
+        @include small-tablet{
+            @include for-mobile{
+                flex-direction: row;
+                flex-wrap: wrap;
+                grid-gap: 12px 15px;
+            }
+        }
 
         @include mobile{
             flex-wrap: wrap;
@@ -12,8 +46,9 @@
     }
 
     a{
-        font-size: clamp(14px, 1.3675vw, 16px);
+        font-size: clamp(13px, 1.2821vw, 15px);
         font-weight: 400;
+        color: rgba(var(--cl-a),.85);
         transition: all .3s;
 
         &:hover{

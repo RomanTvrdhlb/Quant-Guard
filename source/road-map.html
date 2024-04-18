@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="Ru">
+@include('partials/head.html')
+
+<body>
+  @include('partials/header-about.html')
+  <!--@include('partials/header-user.html')-->
+
+  <main>
+
+    <section class="map-section">
+      <div class="container">
+        <div class="map-section__box">
+          <div class="main-top">
+            <h1 class="main-top__title subtitle">Our <b class="blue-text">Road Map</b>
+              </h1>
+            <p>Opening the Way to a New Stage of Cryptocurrency Arbitration</p>
+          </div>
+
+          <ul class="roadmap">
+            <li class="roadmap__row">
+              <div class="roadmap__item roadmap__item--mode">
+                <span class="roadmap__date">(Apr - Jun 2024)</span>
+              </div>
+              <div class="roadmap__item">
+                <div class="roadmap__box">
+                  <span class="roadmap__title">Phase 2: Improving</span>
+                  <p>In-depth improvement of arbitrage algorithms to ensure maximum efficiency and accuracy.</p>
+                </div>
+                <span class="roadmap__date active">(Oct - Dec 2024)</span>
+              </div>
+              <div class="roadmap__item">
+                <div class="roadmap__box">
+                  <span class="roadmap__title">Phase 4: Expansion</span>
+                  <p>Introducing the platform to new markets and developing partnerships to ensure global coverage.</p>
+                </div>
+                <span class="roadmap__date">(Apr - Aug 2025)</span>
+              </div>
+              <div class="roadmap__item">
+                <div class="roadmap__box">
+                  <span class="roadmap__title">Phase 6: Сollaborations</span>
+                  <p>Establishing partnerships with other cryptocurrency and blockchain companies and projects.</p>
+                </div>
+              </div>
+            </li>
+
+            <li class="roadmap__row roadmap__row--second">
+              <div class="roadmap__item">
+                <span class="roadmap__date">(Jul - Sep 2024)</span>
+                <div class="roadmap__box roadmap__box--mode">
+                  <span class="roadmap__title">Phase 1: Basics</span>
+                  <p>Creation of the first prototype of the system with basic functions and algorithms.</p>
+                </div>
+              </div>
+              <div class="roadmap__item">
+                <span class="roadmap__date">(Jan - May 2025)</span>
+                <div class="roadmap__box roadmap__box--third">
+                  <span class="roadmap__title">Phase 3: MVP 2.0</span>
+                  <p>Releasing updates to improve functionality and fix identified deficiencies.</p>
+                </div>
+                
+              </div>
+              <div class="roadmap__item">
+                <span class="roadmap__date">(2026 and beyond)</span>
+                <div class="roadmap__box roadmap__box--fifth">
+                  <span class="roadmap__title">Phase 5: Token presentation</span>
+                  <p>Finalizing an information memorandum and a token issue to be presented to potential investors.</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </section>
+
+
+    <section class="earn-section">
+      <div class="container">
+        <div class="earn-section__box">
+          <div class="earn-section__wrapp">
+            <div class="main-top">
+              <span class="main-top__title subtitle">Earn while you sleep</span>
+              <p>Achieving financial freedom and independence is a common goal for many people. Crypto arbitrage trading
+                systems can be a stepping stone toward achieving this goal by generating consistent income and building
+                wealth over time.</p>
+            </div>
+
+            <ul class="info-list">
+              <li class="info-list__item">
+                <div class="info-list__card">
+                  <span class="info-list__icon">
+                    <svg width='24' height='24'>
+                      <use href='img/sprite/sprite.svg#verify'></use>
+                    </svg>
+                  </span>
+                  Market Analysis
+                </div>
+              </li>
+              <li class="info-list__item">
+                <div class="info-list__card">
+                  <span class="info-list__icon">
+                    <svg width='24' height='24'>
+                      <use href='img/sprite/sprite.svg#globe'></use>
+                    </svg>
+                  </span>
+                  Risk mitigation
+                </div>
+              </li>
+              <li class="info-list__item">
+                <div class="info-list__card">
+                  <span class="info-list__icon">
+                    <svg width='24' height='24'>
+                      <use href='img/sprite/sprite.svg#shield'></use>
+                    </svg>
+                  </span>
+                  Profit Generation
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="earn-section__image">
+            <picture>
+              <source type='image/webp' srcset='img/index/img3.webp'>
+              <img width='617' height='500' src='img/index/img3.png' alt='image'>
+            </picture>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--    @include('partials/components/sections/how-section.html')-->
+  </main>
+
+  @include('partials/footer.html')
+  @include('partials/modals.html')
+</body>
+<script src="js/main.js"></script>
+
+</html>

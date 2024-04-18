@@ -73,6 +73,39 @@
           right: -5%;
         }
       }
+
+      &-icon{
+        position: absolute;
+        z-index: 3;
+
+        @include for-mobile{
+          bottom: 41%;
+          left: 2%;
+          width: Min(16.1538vw, 189px);
+        }
+
+        @include mobile{
+          left: 4%;
+          bottom: 0;
+          transform: translateY(-135%);
+          width: Min(29.34vw ,169px);
+        }
+      }
+  }
+
+  #phone{
+    position: absolute;
+    z-index: 2;
+
+    @include for-mobile{
+      left: 25%;
+      width: Min(17.5214vw, 205px);  
+    }
+
+    @include mobile{
+      left: 31%;
+      width: Min(35.59vw ,205px);
+    }
   }
 
   .main-top{

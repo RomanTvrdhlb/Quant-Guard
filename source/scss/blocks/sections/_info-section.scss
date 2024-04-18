@@ -63,7 +63,7 @@
     }
  
     &--mode{
-        padding-bottom: clamp(80px, 11.1111vw, 130px);
+        padding-bottom: clamp(20px, 2.5641vw, 30px);
         .info-section{
 
             &__box{
@@ -90,6 +90,6 @@
     }
 
     &--ceo{
-        padding-bottom: clamp(40px, 9.8291vw, 115px);
+        padding-bottom: 0;
     }
 }

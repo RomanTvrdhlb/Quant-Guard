@@ -35,8 +35,8 @@ header .logo {
 }
 
 .footer-logo {
-  width: clamp(111px, 10.3419vw, 121px);
-  height: clamp(37px, 3.5043vw, 41px);
+  width: clamp(111px, 14.6154vw, 171px);
+  height: clamp(37px, 4.8718vw, 57px);
 }
 
 .social {
@@ -95,6 +95,14 @@ header .logo {
         }
     }
   }
+}
+
+.blue-text{
+  color: rgba(var(--cl-f),1.0);
+  font-size: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
 }
 
 .link{

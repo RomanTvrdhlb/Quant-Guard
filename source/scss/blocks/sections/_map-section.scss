@@ -1,0 +1,25 @@
+.map-section{
+    padding: clamp(26px, 3.9316vw, 46px) 0 clamp(60px, 12.8205vw, 150px);
+
+    @include for-mobile{
+
+    }
+
+    @include mobile{
+        padding: 26px 0 30px;
+    }
+
+    &__box{
+        display: flex;
+        flex-direction: column;
+        grid-gap: clamp(40px, 7.8632vw, 92px);
+    }
+
+    .main-top{
+        text-align: center;
+        align-items: center;
+        p{
+            max-width: 375px;
+        }
+    }
+}

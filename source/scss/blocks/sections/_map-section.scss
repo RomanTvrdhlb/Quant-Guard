@@ -1,13 +1,5 @@
 .map-section{
-    padding: clamp(26px, 3.9316vw, 46px) 0 clamp(60px, 12.8205vw, 150px);
-
-    @include for-mobile{
-
-    }
-
-    @include mobile{
-        padding: 26px 0 30px;
-    }
+    padding: clamp(26px, 3.9316vw, 46px) 0 clamp(60px, 7.6923vw, 90px);
 
     &__box{
         display: flex;

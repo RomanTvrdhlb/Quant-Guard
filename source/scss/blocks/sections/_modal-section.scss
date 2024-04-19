@@ -1,3 +1,9 @@
 .modal-section{
     padding:clamp(30px, 7.692vw, 90px) 0 clamp(40px, 7.692vw, 90px);
+
+
+    .modal {
+        transform: scale(1);
+        display: flex;
+    }
 }

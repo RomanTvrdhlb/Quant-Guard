@@ -1,4 +1,181 @@
 <div class="overlay fixed-block" data-overlay>
+
+
+    <div class="modal code" data-popup="code">
+        <span class="modal__title">Enter your 2fa code</span>
+        <div class="modal__box">
+          <form class="main-form">
+            <div class="main-form__field">
+              <span class="main-form__subtitle">Code:</span>
+              <label for="mail2" class="main-form__label">
+                <input type="text" id="mail2" class="main-form__input" placeholder="Enter your code">
+                <span class="main-form__icon">
+                  <svg width='24' height='24'>
+                    <use href='img/sprite/sprite.svg#lock'></use>
+                  </svg>
+                </span>
+              </label>
+            </div>
+            <button class="main-btn">
+              Login
+              <span></span>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="modal create" data-popup="create">
+        <span class="modal__title">Create account</span>
+        <div class="modal__box">
+          <form class="main-form">
+            <div class="main-form__field">
+              <span class="main-form__subtitle">Name</span>
+              <label for="name4" class="main-form__label">
+                <input type="text" id="name4" class="main-form__input" placeholder="Enter your login">
+                <span class="main-form__icon">
+                  <svg width='24' height='24'>
+                    <use href='img/sprite/sprite.svg#user'></use>
+                  </svg>
+                </span>
+              </label>
+            </div>
+            <div class="main-form__field">
+              <span class="main-form__subtitle">Password:</span>
+              <label for="pass5" class="main-form__label">
+                <input type="text" id="pass5" class="main-form__input" placeholder="Password">
+                <span class="main-form__icon">
+                  <svg width='24' height='24'>
+                    <use href='img/sprite/sprite.svg#lock'></use>
+                  </svg>
+                </span>
+              </label>
+            </div>
+            <div class="main-form__field">
+              <span class="main-form__subtitle">Repeat your login</span>
+              <label for="name5" class="main-form__label">
+                <input type="text" id="name5" class="main-form__input" placeholder="Repeat your login">
+                <span class="main-form__icon">
+                  <svg width='24' height='24'>
+                    <use href='img/sprite/sprite.svg#user'></use>
+                  </svg>
+                </span>
+              </label>
+            </div>
+            <div class="main-form__field">
+              <span class="main-form__subtitle">Repeat Password:</span>
+              <label for="pass4" class="main-form__label">
+                <input type="text" id="pass4" class="main-form__input" placeholder="Repeat Password">
+                <span class="main-form__icon">
+                  <svg width='24' height='24'>
+                    <use href='img/sprite/sprite.svg#lock'></use>
+                  </svg>
+                </span>
+              </label>
+            </div>
+            <div class="main-form__field">
+              <span class="main-form__subtitle">Email:</span>
+              <label for="mail5" class="main-form__label">
+                <input type="text" id="mail5" class="main-form__input" placeholder="Enter your email">
+                <span class="main-form__icon">
+                  <svg width='24' height='24'>
+                    <use href='img/sprite/sprite.svg#mail'></use>
+                  </svg>
+                </span>
+              </label>
+            </div>
+            <div class="main-form__field main-form__field--captcha">
+              <span class="main-form__subtitle">Captcha:</span>
+              <label for="captcha" class="main-form__label">
+                <input type="text" id="captcha" class="main-form__input" placeholder="Enter captcha">
+                <span class="main-form__captcha">
+                  <img width='139' height='46' src="./img/captcha.png" alt="image">
+                </span>
+              </label>
+            </div>
+            <div class="main-form__field">
+              <span class="main-form__subtitle">Email:</span>
+              <label for="mail6" class="main-form__label">
+                <input type="text" id="mail6" class="main-form__input" placeholder="Repeat your email">
+                <span class="main-form__icon">
+                  <svg width='24' height='24'>
+                    <use href='img/sprite/sprite.svg#mail'></use>
+                  </svg>
+                </span>
+              </label>
+            </div>
+            <button class="main-btn">
+              Create account
+              <span></span>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="modal forgot" data-popup="forgot">
+        <span class="modal__title">Forgot your password</span>
+        <div class="modal__box">
+          <form class="main-form">
+            <div class="main-form__field">
+              <span class="main-form__subtitle">Email:</span>
+              <label for="mail3" class="main-form__label">
+                <input type="text" id="mail3" class="main-form__input" placeholder="Enter your email">
+                <span class="main-form__icon">
+                  <svg width='24' height='24'>
+                    <use href='img/sprite/sprite.svg#mail'></use>
+                  </svg>
+                </span>
+              </label>
+            </div>
+            <button class="main-btn">
+              Reset password
+              <span></span>
+            </button>
+          </form>
+          <div class="modal__links">
+            <a data-btn-inner="login" class="modal__link">Login</a>
+            <a data-btn-inner="code" class="modal__link">Sign Up</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal login" data-popup="login">
+        <span class="modal__title">Login</span>
+        <div class="modal__box">
+          <form class="main-form">
+            <div class="main-form__field">
+              <span class="main-form__subtitle">Name</span>
+              <label for="name2" class="main-form__label">
+                <input type="text" id="name2" class="main-form__input" placeholder="Enter your login">
+                <span class="main-form__icon">
+                  <svg width='24' height='24'>
+                    <use href='img/sprite/sprite.svg#user'></use>
+                  </svg>
+                </span>
+              </label>
+            </div>
+            <div class="main-form__field">
+              <span class="main-form__subtitle">Password:</span>
+              <label for="pass" class="main-form__label">
+                <input type="text" id="pass" class="main-form__input" placeholder="Password">
+                <span class="main-form__icon">
+                  <svg width='24' height='24'>
+                    <use href='img/sprite/sprite.svg#lock'></use>
+                  </svg>
+                </span>
+              </label>
+            </div>
+            <button class="main-btn">
+              Login
+              <span></span>
+            </button>
+          </form>
+    
+          <div class="modal__links">
+            <a data-btn-inner="forgot" class="modal__link close">Forgot your password?</a>
+            <a data-btn-inner="code" class="modal__link">Sign Up</a>
+          </div>
+        </div>
+      </div>
 </div>
 
 

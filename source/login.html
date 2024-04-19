@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="Ru">
+@include('partials/head.html')
+
+<body>
+  @include('partials/header.html')
+
+  <main>
+
+    <section class="modal-section">
+      <div class="container">
+        <div class="modal login">
+          <span class="modal__title">Login</span>
+          <div class="modal__box">
+            <form class="main-form">
+              <div class="main-form__field">
+                <span class="main-form__subtitle">Name</span>
+                <label for="name2" class="main-form__label">
+                  <input type="text" id="name2" class="main-form__input" placeholder="Enter your login">
+                  <span class="main-form__icon">
+                    <svg width='24' height='24'>
+                      <use href='img/sprite/sprite.svg#user'></use>
+                    </svg>
+                  </span>
+                </label>
+              </div>
+              <div class="main-form__field">
+                <span class="main-form__subtitle">Password:</span>
+                <label for="pass" class="main-form__label">
+                  <input type="text" id="pass" class="main-form__input" placeholder="Password">
+                  <span class="main-form__icon">
+                    <svg width='24' height='24'>
+                      <use href='img/sprite/sprite.svg#lock'></use>
+                    </svg>
+                  </span>
+                </label>
+              </div>
+              <button class="main-btn">
+                Login
+                <span></span>
+              </button>
+            </form>
+      
+            <div class="modal__links">
+              <a href="#" class="modal__link close">Forgot your password?</a>
+              <a href="#" class="modal__link">Sign Up</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  @include('partials/footer.html')
+  @include('partials/modals.html')
+</body>
+<script src="js/main.js"></script>
+
+</html>

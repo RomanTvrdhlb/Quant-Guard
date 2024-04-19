@@ -6,12 +6,12 @@
 
 .modal {
   margin: auto;
-  transform: scale(.8);
-  display: none;
+  // transform: scale(.8);
+  display: flex;
 
-  &.active {
-    transform: scale(1);
-  }
+  // &.active {
+  //   transform: scale(1);
+  // }
 
   .close {
     display: flex;

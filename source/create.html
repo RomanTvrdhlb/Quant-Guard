@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="Ru">
+@include('partials/head.html')
+
+<body>
+  @include('partials/header.html')
+
+  <main>
+
+    <section class="modal-section">
+      <div class="container">
+        <div class="modal create">
+          <span class="modal__title">Create account</span>
+          <div class="modal__box">
+            <form class="main-form">
+              <div class="main-form__field">
+                <span class="main-form__subtitle">Name</span>
+                <label for="name4" class="main-form__label">
+                  <input type="text" id="name4" class="main-form__input" placeholder="Enter your login">
+                  <span class="main-form__icon">
+                    <svg width='24' height='24'>
+                      <use href='img/sprite/sprite.svg#user'></use>
+                    </svg>
+                  </span>
+                </label>
+              </div>
+              <div class="main-form__field">
+                <span class="main-form__subtitle">Password:</span>
+                <label for="pass5" class="main-form__label">
+                  <input type="text" id="pass5" class="main-form__input" placeholder="Password">
+                  <span class="main-form__icon">
+                    <svg width='24' height='24'>
+                      <use href='img/sprite/sprite.svg#lock'></use>
+                    </svg>
+                  </span>
+                </label>
+              </div>
+              <div class="main-form__field">
+                <span class="main-form__subtitle">Repeat your login</span>
+                <label for="name5" class="main-form__label">
+                  <input type="text" id="name5" class="main-form__input" placeholder="Repeat your login">
+                  <span class="main-form__icon">
+                    <svg width='24' height='24'>
+                      <use href='img/sprite/sprite.svg#user'></use>
+                    </svg>
+                  </span>
+                </label>
+              </div>
+              <div class="main-form__field">
+                <span class="main-form__subtitle">Repeat Password:</span>
+                <label for="pass4" class="main-form__label">
+                  <input type="text" id="pass4" class="main-form__input" placeholder="Repeat Password">
+                  <span class="main-form__icon">
+                    <svg width='24' height='24'>
+                      <use href='img/sprite/sprite.svg#lock'></use>
+                    </svg>
+                  </span>
+                </label>
+              </div>
+              <div class="main-form__field">
+                <span class="main-form__subtitle">Email:</span>
+                <label for="mail5" class="main-form__label">
+                  <input type="text" id="mail5" class="main-form__input" placeholder="Enter your email">
+                  <span class="main-form__icon">
+                    <svg width='24' height='24'>
+                      <use href='img/sprite/sprite.svg#mail'></use>
+                    </svg>
+                  </span>
+                </label>
+              </div>
+              <div class="main-form__field main-form__field--captcha">
+                <span class="main-form__subtitle">Captcha:</span>
+                <label for="captcha" class="main-form__label">
+                  <input type="text" id="captcha" class="main-form__input" placeholder="Enter captcha">
+                  <span class="main-form__captcha">
+                    <img width='139' height='46' src="./img/captcha.png" alt="image">
+                  </span>
+                </label>
+              </div>
+              <div class="main-form__field">
+                <span class="main-form__subtitle">Email:</span>
+                <label for="mail6" class="main-form__label">
+                  <input type="text" id="mail6" class="main-form__input" placeholder="Repeat your email">
+                  <span class="main-form__icon">
+                    <svg width='24' height='24'>
+                      <use href='img/sprite/sprite.svg#mail'></use>
+                    </svg>
+                  </span>
+                </label>
+              </div>
+              <button class="main-btn">
+                Create account
+                <span></span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  @include('partials/footer.html')
+  @include('partials/modals.html')
+</body>
+<script src="js/main.js"></script>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="Ru">
+@include('partials/head.html')
+
+<body>
+  @include('partials/header.html')
+
+  <main>
+
+    <section class="modal-section">
+      <div class="container">
+        <div class="modal forgot">
+          <span class="modal__title">Forgot your password</span>
+          <div class="modal__box">
+            <form class="main-form">
+              <div class="main-form__field">
+                <span class="main-form__subtitle">Email:</span>
+                <label for="mail3" class="main-form__label">
+                  <input type="text" id="mail3" class="main-form__input" placeholder="Enter your email">
+                  <span class="main-form__icon">
+                    <svg width='24' height='24'>
+                      <use href='img/sprite/sprite.svg#mail'></use>
+                    </svg>
+                  </span>
+                </label>
+              </div>
+              <button class="main-btn">
+                Reset password
+                <span></span>
+              </button>
+            </form>
+            <div class="modal__links">
+              <a href="#" class="modal__link">Login</a>
+              <a href="#" class="modal__link">Sign Up</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  @include('partials/footer.html')
+  @include('partials/modals.html')
+</body>
+<script src="js/main.js"></script>
+
+</html>

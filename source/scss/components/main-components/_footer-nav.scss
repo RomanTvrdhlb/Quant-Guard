@@ -3,7 +3,7 @@
     grid-gap: clamp(30px, 7.265vw, 85px);
 
     @include for-mobile{
-        padding-top: Min(5.556vw, 65px);
+        padding-top: calc(clamp(24px, 2.3077vw, 27px) + 15px);
     }
 
     @include mobile{

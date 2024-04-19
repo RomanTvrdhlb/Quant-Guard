@@ -5,6 +5,7 @@
     display: flex;
     justify-content: space-between;
     grid-gap: 15px 20px;
+    padding-top: 20px;
 
     @include small-tablet{
       flex-direction: column;
@@ -24,14 +25,14 @@
     @include mobile{
       .social{
         align-items: flex-start;
-        padding-top: 44px;
+        padding-top: calc(clamp(24px, 2.3077vw, 27px) + 10px);
       }
     }
 
     &-top{
       display: flex;
       flex-direction: column;
-      grid-gap: 10px;
+      grid-gap: 15px;
       flex-grow: 1;
       
       p{
@@ -42,6 +43,13 @@
         max-width: 202px;
         line-height: 100%;
       }
+    }
+  }
+
+  .logo{
+    img,picture{
+      width: clamp(128px, 12.1368vw, 142px);
+      height: clamp(24px, 2.3077vw, 27px);
     }
   }
 }

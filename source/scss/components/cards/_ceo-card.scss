@@ -21,8 +21,48 @@
         grid-gap: 10px 24px;
     }
 
+    &__bottom{
+        height: 100%;
+        display: flex;
+        
+        @include for-small-tablet{
+            grid-gap: 20px;
+            margin-top: -20px;
+            justify-content: flex-end;
+            flex-direction: column;
+        }
+
+        @include small-tablet{
+            grid-gap: 40px;
+            justify-content: space-between;
+            align-items: center;
+            @include for-mobile{
+                grid-column: 2/3;
+            }
+        }
+
+        @include mobile{
+            grid-column: 1/-1;
+        }
+
+        .social{
+            grid-gap: 15px;
+        }
+    }
+
+    &__link{
+        color: rgba(var(--cl-f),1.0);
+        text-decoration: underline;
+        text-underline-offset: 4px;
+        transition: all .3s;
+
+        &:hover{
+            text-decoration-color: transparent;
+        }
+    }
 
     &__image{
+        display: flex;
         @include small-tablet{
             display: flex;
           

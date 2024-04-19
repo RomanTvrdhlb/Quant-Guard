@@ -99,10 +99,10 @@
 
   &__image {
     width: Min(42.847vw, 617px);
-
+    overflow: hidden;
     @include for-small-tablet {
       position: absolute;
-      bottom: -7px;
+      bottom: 0;
     }
 
     @include for-desktop {
@@ -121,9 +121,37 @@
     }
 
     @include small-tablet {
+      position: relative;
       display: flex;
       align-self: center;
       min-width: 300px;
+    }
+  }
+
+  #mobile{
+    position: absolute;
+    z-index: 2;
+
+
+    @media (min-width: (1300px)){
+      left: 22.5%;
+    }
+
+    @media (min-width: (1240px)) and (max-width: (1300px)) {
+      left: 18%;
+    }
+
+    @include laptop{
+      left: 17%;
+    }
+
+    @include for-small-tablet{
+      width: Min(28.205vw, 330px);  
+    }
+
+    @include small-tablet{
+      left: 16.5%;
+      width: clamp(200px, 28.125vw, 216px);
     }
   }
 }

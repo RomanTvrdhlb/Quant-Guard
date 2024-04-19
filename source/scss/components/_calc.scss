@@ -38,7 +38,7 @@
     grid-gap: clamp(15px, 1.7094vw, 20px);
 
     @include for-tablet{
-      grid-template-columns: repeat(2, 1fr) 375px;
+      grid-template-columns: repeat(2, 1fr) 365px;
     }
 
     @include tablet{

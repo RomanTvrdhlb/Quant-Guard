@@ -230,6 +230,10 @@
                         width: 100%;
                     }
                 }
+
+                @include ios{
+                    flex-direction: column;
+                }
             }
         }
 

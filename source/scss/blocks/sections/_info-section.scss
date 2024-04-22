@@ -90,6 +90,17 @@
     }
 
     &--ceo{
-        padding-bottom: 0;
+        padding-bottom: clamp(60px, 10.5983vw, 124px);
+    }
+
+    &--about{
+        padding-bottom: clamp(60px, 13.2479vw, 155px);
+
+        .info-section{
+
+            &__content{
+                grid-gap: clamp(30px, 3.8462vw, 45px);
+            }
+        }
     }
 }

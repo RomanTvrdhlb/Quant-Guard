@@ -15,11 +15,15 @@
 
   // --------------- default JS variables ---------------
 
-  // --header-height: 116px;
+  --header-height: 104px;
 
-  // @include tablet{
-  //   --header-height: 76px;
-  // }
+  @include tablet{
+    --header-height: 100px;
+  }
+
+  @include small-tablet{
+    --header-height: 94px;
+  }
 
 
   // --------------- default scroll variables ---------------
@@ -73,8 +77,6 @@
   --br-b: #2364F9; // var(--br-b);
   --br-c: #2C3458; // var(--br-c);
   --br-d: #0C1022; // var(--br-d);
-
-
   --br-e: #9A8BDA; // var(--br-e);
 
  // --------------- default gradient color variable ---------------

@@ -16,4 +16,20 @@
     &--mode{
         padding:clamp(25px, 4.7009vw, 55px) 0 clamp(40px, 5.1282vw, 60px);
     }
+
+    &--about{
+        padding: 0 0 clamp(60px, 17.7778vw, 208px);
+        overflow: hidden;
+        .faq-section{
+            &__box{
+                grid-gap: clamp(40px, 4.2735vw, 50px);
+            }
+
+            &__title{
+                @include tablet{
+                    text-align: center;
+                }
+            }
+        }
+    }
 }

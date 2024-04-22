@@ -66,6 +66,14 @@
       color: rgba(var(--cl-c),1.0);
     }
   }
+
+  &--social{
+    background: transparent;
+    border: solid 1px var(--br-b);
+    color: rgba(var(--cl-a),1.0);
+    max-width: 198px;
+    width: 100%;
+  }
 }
 
 .play-btn{

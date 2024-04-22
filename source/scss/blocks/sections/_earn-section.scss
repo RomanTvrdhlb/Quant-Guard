@@ -154,4 +154,113 @@
       width: clamp(200px, 28.125vw, 216px);
     }
   }
+
+  &__icons{
+    display: flex;
+    align-items: center;
+    grid-gap: 18px;
+
+    @include small-tablet{
+      justify-content: center;
+    }
+  }
+
+  &__link{
+    transition: all .3s;
+
+    &:hover{
+      transform: scale(1.05);
+    }
+  }
+
+  &--about{
+    overflow: hidden;
+    padding-bottom: clamp(40px, 11.2821vw, 132px);
+    .earn-section{
+      &__wrapp{
+        grid-gap: clamp(25px, 3.8462vw, 45px);
+        @include for-small-tablet{
+          max-width: clamp(450px, 50vw, 585px);
+        }
+      }
+      &__box{
+        @include for-small-tablet{
+          padding: clamp(80px, 12.0513vw, 141px) clamp(20px, 3.4188vw, 40px);
+        }
+
+        &::before {
+          background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1429' height='608' fill='none'%3E%3Crect width='1429' height='608' fill='url(%23paint0_linear_137_943)' rx='21'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_137_943' x1='714.5' x2='714.5' y1='0' y2='608' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23121834' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23121834'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E");
+          background-position: bottom center;
+          background-size: cover;
+          background-repeat: no-repeat;
+          border: 1px solid var(--br-c);
+          border-radius: 21px;
+        }
+
+        @include small-tablet{
+          overflow: hidden;
+        }
+      }
+
+      &__image{
+        @include for-small-tablet{
+          width: 100%;
+          right: -31%;
+        }
+        
+        @include small-tablet{
+          overflow: initial;
+        }
+
+        img,picture{
+          position: relative;
+          bottom: -10px;
+          width: Min(48.2906vw, 565px);
+
+          @include small-tablet{
+            right: calc(clamp(180px, 28.646vw, 220px) * -1);
+          }
+        }
+      }
+    }
+    #mobile{
+      @include for-desktop{
+        left: 40.5%;
+      }
+
+      @include desktop{
+        @include for-laptop{
+          left: 38.5%;
+        }
+      }
+
+      @include for-laptop{
+        bottom: -28%;
+      }
+
+      @include laptop{
+        @include for-small-tablet{
+          left: 37%;
+          bottom: -30%;
+        }
+      }
+
+      @include small-tablet{
+        @include for-mobile{
+          bottom: -35%;
+        }
+      }
+
+      @include mobile{
+        @media (min-width: (500px)) {
+          bottom: -55%;
+        }
+      }
+
+      @include ios{
+        bottom: -105%;
+      }
+
+    }
+  }
 }

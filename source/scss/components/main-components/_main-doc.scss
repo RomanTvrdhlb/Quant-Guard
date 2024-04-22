@@ -1,0 +1,39 @@
+.main-doc{
+    display: flex;
+    flex-direction: column;
+    grid-gap: 15px;
+    border: 1px solid var(--br-b);
+    border-radius: 21px;
+    min-height: 122px;
+    background: rgba(var(--bg-k),1.0);
+    padding: clamp(13px, 2.3932vw, 28px) clamp(15px, 2.5641vw, 30px);
+
+    @include for-mobile{
+        min-width: 185px;
+    }
+
+    &__btn{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        transition: all .3s;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 150%;
+        grid-gap: 5px;
+        white-space: nowrap;
+
+        svg{
+            transition: all .3s;
+            margin-bottom: -2px;
+            flex-shrink: 1;
+        }
+
+        &:hover{
+            transform: scale(1.02);
+            svg{
+                color: rgba(var(--cl-f),1.0);
+            }
+        }
+    }
+}

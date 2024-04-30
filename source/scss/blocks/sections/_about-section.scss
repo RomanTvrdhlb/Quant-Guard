@@ -201,6 +201,54 @@
         }
     }
 
+    &--referral{
+        @include for-tablet{
+            padding: 0 0 clamp(70px, 7.6923vw, 90px);
+        }
+
+        @include tablet{
+                padding: 0 0 clamp(50px, 7.6923vw, 90px);
+        }
+
+        .main-top{
+            grid-gap: clamp(24px, 2.5641vw, 30px);
+            p{
+                line-height: 193.75%;
+            }
+
+            &__title{
+                line-height: 114.286%;
+            }
+
+            @include tablet{
+                max-width: 100%;
+            }
+        }
+
+        .about-section{
+            &__inner{
+                @include for-tablet{
+                    grid-template-columns: auto clamp(500px, 47.097vw, 584px);
+                    grid-gap: clamp(40px, 8.79vw, 109px);
+                }
+
+                @include tablet{
+                    @include for-small-tablet{
+                  grid-gap: 40px;
+                  grid-template-columns: .8fr 1fr;
+                }
+            }
+            @include small-tablet{
+                grid-template-columns: 100%;
+
+                .main-top{
+                    order: -1;
+                }
+            }
+            }
+        } 
+    }
+
     &--community{
         padding: 0 0 80px;
 

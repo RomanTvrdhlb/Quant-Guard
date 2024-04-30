@@ -1,0 +1,28 @@
+.referral-box{
+    display: flex;
+    flex-direction: column;
+    grid-gap: clamp(30px, 4.7009vw, 55px);
+    
+    @include for-tablet{
+        margin-left: Min(5.968vw, 74px);
+        max-width: 403px;
+    }
+
+    &__title{
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 117%;
+    }
+
+    p{
+        font-size: 14px;
+        line-height: 150%;
+        color: rgba(var(--cl-g),1.0);
+    }
+
+    &__wrapp{
+        display: flex;
+        flex-direction: column;
+        grid-gap: 9px;
+    }
+}

@@ -1,0 +1,131 @@
+.referral-card{
+    padding: clamp(31px, 3.5043vw, 41px) clamp(16px, 2.0513vw, 24px) clamp(20px, 2.3932vw, 28px);
+    z-index: 1;
+    position: relative;
+    border: solid 0.88px var(--br-c);
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    grid-gap: clamp(24px, 2.4786vw, 29px);
+
+    &:after{
+        content: '';
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='492' height='338' fill='none'%3E%3Cg filter='url(%23filter0_f_192_1031)'%3E%3Cellipse cx='246' cy='169' fill='%232364F9' rx='101' ry='24'/%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='filter0_f_192_1031' width='492' height='338' x='0' y='0' color-interpolation-filters='sRGB' filterUnits='userSpaceOnUse'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeBlend in='SourceGraphic' in2='BackgroundImageFix' result='shape'/%3E%3CfeGaussianBlur result='effect1_foregroundBlur_192_1031' stdDeviation='72.5'/%3E%3C/filter%3E%3C/defs%3E%3C/svg%3E");
+        position: absolute;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        pointer-events: none;
+        z-index: -1;
+
+        @include for-tablet{
+            width: clamp(292px, 42.0513vw, 492px);
+            height: clamp(238px, 28.8889vw, 338px);
+        }
+
+        @include tablet{
+            width: clamp(292px, 48.047vw, 492px);
+            height: clamp(238px, 33.008vw, 338px);
+        }
+    }
+
+    &::before{
+        overflow: hidden;
+        border-radius: inherit;
+        position: absolute;
+        content: '';
+        inset: 0;
+        z-index: -1;
+        pointer-events: none;
+        backdrop-filter: blur(69.19999694824219px);
+        background: var(--gr-a);
+    }
+
+    &__top{
+        display: flex;
+        flex-direction: column;
+        grid-gap: 9px;
+        position: relative;
+
+        &::before{
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='259' height='44' fill='none'%3E%3Cg filter='url(%23filter0_d_192_1066)'%3E%3Cpath stroke='url(%23paint0_linear_192_1066)' stroke-width='3' d='M20 18h218.5' shape-rendering='crispEdges'/%3E%3C/g%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_192_1066' x1='20' x2='238.5' y1='18.5' y2='18.5' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%232364F9' stop-opacity='0'/%3E%3Cstop offset='0.52' stop-color='%232364F9'/%3E%3Cstop offset='1' stop-color='%232364F9' stop-opacity='0'/%3E%3C/linearGradient%3E%3Cfilter id='filter0_d_192_1066' width='258.5' height='43' x='0' y='0.5' color-interpolation-filters='sRGB' filterUnits='userSpaceOnUse'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeColorMatrix in='SourceAlpha' result='hardAlpha' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0'/%3E%3CfeOffset dy='4'/%3E%3CfeGaussianBlur stdDeviation='10'/%3E%3CfeComposite in2='hardAlpha' operator='out'/%3E%3CfeColorMatrix values='0 0 0 0 0.137255 0 0 0 0 0.392157 0 0 0 0 0.976471 0 0 0 0.5 0'/%3E%3CfeBlend in2='BackgroundImageFix' result='effect1_dropShadow_192_1066'/%3E%3CfeBlend in='SourceGraphic' in2='effect1_dropShadow_192_1066' result='shape'/%3E%3C/filter%3E%3C/defs%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            width: 259px;
+            height: 44px;
+            content: '';
+            top: calc(clamp(31px, 3.5043vw, 41px) * -1);
+            left: 50%;
+            transform: translate(-50%, -40%);
+            z-index: 2;
+            position: absolute;
+        }
+    }
+
+    &__title{
+        font-weight: 600;
+        font-size: clamp(18px, 1.7949vw, 21px);
+    }
+
+    &__subtitle{
+        color: rgba(var(--cl-h),1.0);
+        font-size: clamp(16px, 1.5385vw, 18px);
+    }
+
+    &__list{
+        display: flex;
+        flex-direction: column;
+        grid-gap: 15px;
+    }
+
+    &__box{
+        padding: clamp(15px, 1.7094vw, 20px) clamp(25px, 2.5641vw, 30px) clamp(14px, 2.4786vw, 29px);
+        border: solid 1px var(--br-c);
+        border-radius: 16px;
+        display: flex;
+        flex-direction: column;
+        grid-gap: clamp(20px, 2.1368vw, 25px);
+    }
+
+    &__bottom{
+        display: flex;
+        grid-gap: 10px;
+        align-items: center;
+        justify-content: space-between;
+        grid-gap: 14px;
+        border-top: solid 1px var(--br-c);
+        padding-top: 15px;
+    }
+
+    &__item{
+        display: flex;
+        align-items: center;
+        grid-gap: 10px;
+    }
+
+    &__name{
+        font-size: clamp(14px, 1.3675vw, 16px);
+        line-height: 131%;
+        color: rgba(var(--cl-g),1.0);
+    }
+
+    &__value{
+        flex-grow: 1;
+            font-weight: 600;
+            font-size: clamp(16px, 1.5385vw, 18px);
+            line-height: 117%;
+            text-align: right;
+    }
+
+    &__total{
+        font-weight: 600;
+        font-size: clamp(16px, 1.5385vw, 18px);
+        line-height: 117%;
+        text-align: right;
+        color: rgba(var(--cl-f),1.0);
+    }
+}

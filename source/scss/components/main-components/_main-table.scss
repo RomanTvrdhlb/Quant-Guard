@@ -1,17 +1,52 @@
 .main-table{
     display: flex;
     flex-direction: column;
-    
-    @include small-tablet{
-        overflow: auto;
-        width: calc(100% + (var(--container-offset) * 2));
-        margin-left: calc((var(--container-offset) * -1));
+    position: relative;
+    z-index: 1;
+
+    &.active{
+        &::before{
+            opacity: 0;
+            visibility: hidden;
+        }
     }
+
+    &__box{
+        overflow: auto;
+        margin-left: calc((((100vw - var(--container-width)) /2) +  var(--container-offset)) * -1);
+
+        @include tablet{
+            margin-left: calc((var(--container-offset) * -1));
+        }
+
+        padding-bottom: clamp(54px, 7.1795vw, 84px);
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+    &::before{
+        content: '';
+        background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 10%);
+        right: 0;
+        top: 0;
+        bottom: clamp(50px, 6.8376vw, 80px);
+        z-index: 2;
+        width: 50vw;
+        transform: translateX(89%);
+        position: absolute;
+        transition: all .2s;
+
+        @include tablet{
+            transform: translateX(91%);
+        }
+    }
+
     
     &__list{
         display: flex;
         flex-direction: column;
-
         .main-table__row{
             &:nth-child(even){
                 background:rgba(var(--bg-d),1.0);
@@ -21,41 +56,41 @@
     
     &__row{
         display: grid;
-        grid-template-columns: repeat(8, 1fr) 122px;
-        grid-template-columns: .9fr 1fr .7fr .75fr .75fr .75fr .6fr .7fr 122px;
         grid-gap: 10px;
         border-radius: 12px;
-        padding: 17px clamp(10px, 1.6239vw, 19px) 16px clamp(10px, 1.9658vw, 23px);
+        padding: 17px clamp(14px, 1.6239vw, 19px) 16px clamp(14px, 1.9658vw, 23px);
         min-height: 57px;
+       
+        
+        @include for-tablet{
+            grid-template-columns: 157px 181px repeat(12, 113px) 137px 63px 122px;
+            min-width: 2220px;
+        }
+        @include tablet{
+            grid-template-columns: 115px 119px repeat(12, 85px) 90px 65px 100px;
+            min-width: 1700px;
+        }
 
         &--head{
             background: rgba(var(--bg-j),1.0);
 
             .main-table__value{
-                white-space: nowrap;
-                font-size: clamp(12px, 1.1966vw, 14px);
+                font-size: clamp(13px, 1.1966vw, 14px);
                 line-height: 114%;
+                max-width: 80px;
 
                 &:last-child{
-                    justify-content: flex-end;
-                    padding-right: 22px;
+                    justify-self: end;
+                    text-align: end;
                 }
             }
         }
 
-        &--mode{
-            padding: 10px clamp(10px, 1.6239vw, 19px) 10px clamp(10px, 1.9658vw, 23px);
-            .main-table__value{
-                &:last-child{
-                    padding-right: 0;
-                }
-            }
+        @include for-tablet{
+            margin-left: calc(((100vw - var(--container-width)) /2) +  var(--container-offset));
         }
-
-        @include small-tablet{
-            min-width: 850px;
-            grid-gap: 15px;
-            margin: 0 var(--container-offset);
+        @include tablet{
+            margin-left: var(--container-offset);
         }
     }
 
@@ -85,17 +120,70 @@
         display: flex;
         align-items: center;
         grid-gap: 4px;
-
-        &:last-child{
-            justify-content: flex-end;
-            padding-right: 35px;
-        }
     }
 
     &__icon{
         margin-bottom: -3px;
         svg{
             fill: none;
+            stroke: rgba(var(--cl-f),1.0);
+        }
+
+        &--bronze{
+            svg{
+                stroke: #9A685D;
+            }
+        }
+
+        &--silver{
+            svg{
+                stroke: #A4A4AC;
+            }
+        }
+
+        &--gold{
+            svg{
+                stroke: #AF9775;
+            }
+        }
+
+        &--platinum{
+            svg{
+                stroke: none;
+                fill: #828282;
+            }
+        }
+
+        &--diamond{
+            svg{
+                stroke: none;
+                fill: #7F669E;
+            }
+        }
+
+        &--elite{
+            svg{
+                stroke: none;
+                fill: #547661;
+            }
+        }
+
+        &--premier{
+            svg{
+                stroke: #C1C1D3;
+            }
+        }
+
+        &--ultimate{
+            svg{
+                stroke: #D0A294;
+            }
+        }
+
+        &--vip{
+            svg{
+                stroke: #DAC99C;
+            }
         }
     }
 }
